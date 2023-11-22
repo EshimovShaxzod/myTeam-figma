@@ -55,6 +55,7 @@
 @media only screen and (max-width: 689px){
 
     .hero{
+        margin-bottom: 0;
         padding-top: 45px;
         background-image: url("../images/hero-bg1.svg");
         background-position: calc(50%) 447px;
@@ -332,3 +333,133 @@
 /* STARTED RESPONSIVE STYLE END */
 
 /* STARTED STYLE END */
+
+/* FOOTER STYLE START */
+.site-footer{
+    padding: 48px 0;
+}
+
+.site-footer__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer__nav-link__img{
+    margin-bottom: 25px;
+}
+
+.site-footer__nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.site-footer__nav-item:not(:last-child){
+    margin-right: 40px;
+}
+
+.site-footer__nav-link{
+    color: var(--colorPrimary);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.site-footer__nav-link:active{
+    color: #F67E7E; 
+}
+
+.adrees-list{
+    width: 100%;
+    max-width: 445px;
+}
+
+.adrees-list__item{
+    color: var(--colorPrimary);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    opacity: 0.6;
+}
+
+.site-footer__network-list{
+    display: flex;
+}
+
+.network-list__item:not(:last-child){
+    margin-right: 16px;
+}
+
+
+.network-list__item .bx{
+   font-size: 30px;
+   color: #fff;
+}
+
+.network-list__item .bx:active{
+    color: #F67E7E; 
+}
+
+.site-footer__reserved{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    color:var(--colorPrimary);
+}
+
+/* FOOTER RESPONSIVE STYLE START */
+@media only screen and (max-width: 689px){
+
+    .site-footer__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-footer__nav-link__img{
+        width: 96px;
+        height: 24px;
+    }
+
+    .site-footer__nav{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .site-footer__nav-item:not(:last-child){
+        margin-right: 24px;
+    }
+
+    .adrees-list{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .network-list{
+        margin-bottom: 16px;
+    }
+
+    .site-footer__reserved{
+        position: relative;
+        opacity: 0.6;
+    }
+}
+
+@media only screen and (min-width: 690px) and (max-width:1109px){
+
+    .adrees-list{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .site-footer__reserved{
+        opacity: 0;
+    }
+
+}
+
+/* FOOTER RESPONSIVE STYLE END */
+
+/* FOOTER STYLE END */
